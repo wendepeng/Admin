@@ -1,0 +1,127 @@
+/*
+css of web admin system
+version: 1.0 
+author: tan
+create: 2011-09-14
+*/
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+/* commons {{ */
+html{background:url(bg_body_repeat.png) repeat}
+body{font:13px/1.231 arial,helvetica,clean,sans-serif}
+a{color:#16AEC5;text-decoration:none}
+a:hover{color:#FF0000;text-decoration:underline}
+a em{display:none}
+.clearfix{zoom:1}
+.clearfix:after{content:'.';display:block;visibility:hidden;clear:both;height:0px}
+.radius5{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+.radius5tr{-webkit-border-radius:8px 6px 0 0;-moz-border-radius:8px 6px 0 0;border-radius:8px 6px 0 0;}
+.green{padding:0 4px;font-weight:bold;color:#00FF00}
+.red{padding:0 4px;font-weight:bold;color:#FF0000}
+/* mwin */
+.mwin{width:300px;border:1px solid #938E88;border-top:0 none;border-left:0 none;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;background-color:#FFF}
+.mwin .hd{height:50px;line-height:50px;background-color:#75D5E5;border-top:1px solid #75D5E5;border-left:1px solid #75D5E5}
+.mwin .hd h3{float:left;padding-left:10px;font-size:22px;font-weight:bold;letter-spacing:5px}
+.mwin .hd .con{float:right;width:110px}
+.mwin .hd .con a{margin-left:10px;color:#FFF}
+.mwin .hd .con a:hover{color:#FF0000}
+.mwin .bd{padding:0 0 12px 10px}
+
+.lborder{float:left;width:2px;height:48px;border-left:1px solid #65B8C6}
+.lborder span{display:block;width:1px;height:100%;border-left:1px solid #ADE7F2}
+.lborder span a{display:none}
+
+.grayipt{padding:6px 4px;width:268px;border:1px solid #CCC;background:#FFF url(bg_grayipt_repeat_x.png) repeat-x}
+
+.btn{width:54px;height:30px;background:url(btns_sprites.png) no-repeat -96px 0;border:0 none;color:#FFF;font-weight:bold;cursor:pointer}
+.btnlink{width:133px;background-position:0 -60px;line-height:30px;text-align:center;color:#18ADC3}
+
+/* layout */
+.header{height:77px;background-color:#3D3332}
+.content, .footer{width:940px;margin:0 auto}
+.content{margin-top:10px}
+.sidebar{float:left;padding:10px;width:214px;background-color:#A5948A}
+.main{float:right;width:695px}
+/* commons }} */
+
+/* modules {{*/
+/* login */
+#login{margin:160px auto auto auto}
+#login .bd p{padding-top:23px}
+#login .bd .btns{padding:21px 10px 0 0;text-align:right}
+#login .bd p input{margin-top:3px}
+#login .bd .btns input{margin-top:0}
+#login .bd .btns label{float:left}
+#login .bd .btns label input{margin-right:5px}
+
+/* pageTop */
+#pageTop{width:940px;margin:0 auto}
+#pageTop h1{float:left;margin-top:8px;width:234px;height:56px;background:url(logo.png) no-repeat}
+#pageTop h1 a{display:block;width:100%;height:100%}
+#pageTop h1 a em{display:none}
+#pageTop .btnlink{float:left;margin:21px 0 0 10px;_margin-left:5px}
+#pageTop p{float:right;margin-top:30px;color:#FFF}
+#pageTop p strong{font-weight:bold}
+
+/* menu */
+#menu{}
+#menu .hd{display:none}
+#menu .bd{padding-left:0}
+#menu .bd .item{padding-bottom:10px}
+#menu .bd .item h4{height:30px;line-height:30px;background:url(bg_menu.png) no-repeat;text-align:right;color:#FFF;font-weight:bold}
+#menu .bd .item h4 span{display:block;float:left;padding-left:65px;line-height:26px}
+#menu .bd .item h4 a{display:inline-block;margin-right:10px;width:20px;height:15px;background:url(bg_menu.png) no-repeat right -60px}
+#menu .bd .on h4 a{background-position:right -40px}
+/*ie6 hack{{*/
+#menu .bd .item h4 a{_height:17px;_background-position:right -56px}
+#menu .bd .on h4 a{_background-position:right -35px}
+/*ie6 hack}}*/
+#menu .bd .links{display:none}
+#menu .bd .on .links{display:block}
+#menu .bd .links li{margin-left:33px;line-height:1.56;color:#D0C6C5;list-style-type:disc}
+#menu .bd .links li a{color:#D0C6C5}
+#menu .bd .links li a:hover{color:#FF0000}
+#menu .bd .links li strong{font-weight:bold;color:#FFF}
+/* item icons */
+#menu .bd .pages h4 span{background-position:10px -118px}
+#menu .bd .media h4 span{background-position:10px -145px}
+#menu .bd .comments h4 span{background-position:10px -178px}
+#menu .bd .settings h4 span{background-position:10px -208px}
+
+/* page */
+#page{width:auto}
+#page .bd{padding:10px}
+#page h4{font-weight:bold;font-size:14px;color:#666;line-height:1.8}
+#page li{list-style:inside decimal;text-indent:14px}
+
+/* grid */
+.grid{margin:10px 0;border:1px solid #A5948A}
+.grid table{width:100%}
+.grid table thead{background-color:#A5948A}
+.grid table th{padding:5px 0 5px 6px;color:#FFF;font-weight:bold}
+.grid table td{padding-left:4px;height:28px;line-height:28px;border-bottom:1px solid #DDD;border-right:1px solid #DDD}
+.grid table .center{padding:0;text-align:center}
+.grid table .last{border-right:0 none}
+.grid table .allbox{padding-left:14px;border-right:0 none}
+.grid table tfoot .last{padding-right:15px;text-align:right}
+.grid table tfoot .last a,.grid table tfoot .last strong{padding:0 4px}
+
+/* commonform */
+.commonform{margin:10px 0}
+.commonform fieldset{border:1px solid #CCC}
+.commonform legend{margin-left:10px;padding:0 2px;font-weight:bold}
+.commonform .item{padding:8px 0;border-bottom:1px solid #EEE}
+.commonform .item label{display:-moz-inline-box;display:inline-block;padding-right:10px;width:140px;text-align:right}
+.commonform .item .txt{width:235px;padding:5px;border:1px solid #CCC;vertical-align:middle;background:url(bg_ipt.png) repeat-x}
+
+/* copyright */
+#copyright{margin:10px 0 5px 0;text-align:center}
+
+/* footer */
+.footer{margin-top:20px}
+/* modules }}*/
